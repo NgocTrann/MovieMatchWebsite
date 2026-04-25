@@ -8,7 +8,7 @@ if (!token || !user) {
   throw new Error("Redirecting to login");
 }
 
-document.getElementById("username-display").textContent = `👤 ${user.username}`;
+document.getElementById("username-display").textContent = `User: ${user.username}`;
 
 document.getElementById("logout-btn").addEventListener("click", () => {
   localStorage.removeItem("mm_token");
