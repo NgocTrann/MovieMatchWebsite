@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieMatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 MovieMatch</h1>
+    <div class="user-bar">
+      <span id="username-display"></span>
+      <button id="watchlist-btn">📋 Watchlist</button>
+      <button id="logout-btn">Sign Out</button>
+    </div>
+  </header>
+
+  <div class="controls">
+    <select id="type">
+      <option value="movie">Movies</option>
+      <option value="tv">TV Shows</option>
+    </select>
+
+    <select id="option">
+      <option value="trending">Trending</option>
+      <option value="top-rated">Top Rated</option>
+      <option value="mood">By Mood</option>
+      <option value="search">Search</option>
+      <option value="time">Time of Day</option>
+    </select>
+
+    <div id="extra-inputs">
+      <select id="mood-select" class="hidden">
+        <option value="">Select mood...</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="scared">Scared</option>
+        <option value="romantic">Romantic</option>
+        <option value="excited">Excited</option>
+        <option value="relaxed">Relaxed</option>
+        <option value="thoughtful">Thoughtful</option>
+        <option value="intense">Intense</option>
+      </select>
+
+      <input id="search-input" class="hidden" type="text" placeholder="Search title..." />
+
+      <select id="time-select" class="hidden">
+        <option value="">Select time...</option>
+        <option value="day">Day</option>
+        <option value="night">Night</option>
+        <option value="dawn">Dawn</option>
+        <option value="dusk">Dusk</option>
+      </select>
+    </div>
+
+    <button id="go-btn">Go</button>
+  </div>
+
+  <!-- Watchlist Panel -->
+  <div id="watchlist-panel" class="hidden">
+    <div class="panel-header">
+      <h2>📋 My Watchlist</h2>
+      <button id="close-watchlist">✕</button>
+    </div>
+    <div id="watchlist-items"></div>
+  </div>
+
+  <div id="results"></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieMatch — Sign In</title>
+  <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+  <div class="bg-reel">
+    <div class="reel-strip" id="reel-strip"></div>
+  </div>
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="brand">
+        <span class="clapperboard">🎬</span>
+        <h1>MovieMatch</h1>
+        <p class="tagline">Your cinema, personalised.</p>
+      </div>
+
+      <form id="login-form" class="auth-form">
+        <div class="field">
+          <label>Username</label>
+          <input type="text" id="login-username" placeholder="admin" required />
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" id="login-password" placeholder="••••••••" required />
+        </div>
+        <div class="error-msg" id="login-error"></div>
+        <button type="submit" class="submit-btn">
+          <span class="btn-text">Sign In</span>
+          <span class="btn-loader hidden">⏳</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>
